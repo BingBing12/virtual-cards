@@ -130,7 +130,9 @@ a{
     height: 100%;
     /*border-radius: 10px;*/
     transform-style: preserve-3d;
-    transition: all 1s ease;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
 }
 .front-face{
     position: absolute;
