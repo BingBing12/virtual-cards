@@ -142,7 +142,8 @@ a{
     height: 100%;
     z-index: 10;
     /*border-radius: 10px;*/
-    backface-visibility: hidden;
+    
+    -webkit-backface-visibility: hidden;
     overflow: hidden;
     background: seashell;
     background-image: url(../pics/WhatsApp\ Image\ 2021-11-12\ at\ 10.35.55\ PM.jpeg);
@@ -159,7 +160,8 @@ a{
     height: 100%;
     z-index: 5;
     /*border-radius: 10px;*/
-    backface-visibility: hidden;
+    
+    -webkit-backface-visibility: hidden;
     overflow: hidden;
     background: seashell;
     background-image: url(../pics/image1.jpeg);
