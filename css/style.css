@@ -1,0 +1,234 @@
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+    background-image: url(../pics/theme.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.mobile{
+    visibility: hidden;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: seashell;
+}
+.logo{
+    text-decoration: none;
+    flex-basis: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 0 10px 20px;
+}
+.nav-about, .nav-testimonial, .nav-contact{
+    flex-basis: 17%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 12px 0;
+    border-radius: 5px;
+}
+.nav-about:hover, .nav-testimonial:hover, .nav-contact:hover{
+    background-color: rgb(247, 173, 120);
+    color: white;
+}
+.img1{
+    display: block;
+    width: 100%;
+    height: 550px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-image: url(../pics/WhatsApp\ Image\ 2021-11-12\ at\ 10.35.55\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    background-color: seashell;
+    border-radius: 50% 5px 5px 50%;
+}
+.about-img, .about-txt{
+    flex-basis: 50%;
+}
+.about-img{
+    background-image: url(../pics/Phoondz.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.about-txt{
+    align-self: center;
+    padding: 20px;
+    text-align: justify;
+}
+.quote{
+    padding: 25px;
+    height: fit-content;
+    margin: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    background-color: sienna;
+    color: white;
+    border-radius: 5px;
+}
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    background-color: rgb(179, 219, 206);
+    border-radius: 5px 50% 50% 5px;
+}
+.testimonials-txt{
+    flex-basis: 50%;
+    align-self: center;
+    padding: 20px;
+    text-align: justify;
+}
+.testimonials-img{
+    flex-basis: 50%;
+    background-image: url(../pics/VINAY\ copy.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.contact{
+    margin: 100px auto;
+    display: flex;
+    height: 500px;
+    background-color: rgb(185, 171, 194);
+    border-radius: 50% 5px 5px 50%;
+}
+.contact-txt{
+    flex-basis: 50%;
+    align-self: center;
+    padding: 20px;
+    text-align: justify;
+}
+.contact-img{
+    flex-basis: 50%;
+    background-image: url(../pics/Mom.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(224, 192, 199);
+    border-radius: 10px 10px 0 0;
+}
+.footer div{
+    color: white;
+    flex-basis: 50%;
+    
+}
+.footer h3{
+    margin-left: 40px;
+}
+.socials li{
+    
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    
+}
+#copyright{
+    margin-top: 50px;
+    font-size: 10px;
+    color: black;
+}
+.explore li, .explore a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.contact-txt h1{
+    font-style: italic;
+    color: white;
+}
+.card-container{
+    width: 309px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+.card{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 10px;*/
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.front-face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 10px;*/
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: seashell;
+    background-image: url(../pics/WhatsApp\ Image\ 2021-11-12\ at\ 10.35.55\ PM.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .back-face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 10px;*/
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: seashell;
+    background-image: url(../pics/image1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+@media screen and (min-width: 900px){
+    .card-container:hover .card{
+        transform: rotateY(180deg);
+    }
+}
+@media screen and (max-width: 900px){
+    .contact .active{
+        transform: rotateY(180deg);
+    }
+}
